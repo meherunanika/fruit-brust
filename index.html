@@ -1,12 +1,77 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- tailwind and DaisyUI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- lato font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+
+    <style>
+        .font-lato {
+            font-family: 'Lato', sans-serif;
+        }
+        nav {
+          max-width: 100%;
+        }
+    </style>
+
 </head>
-<body>
+  <body class="font-lato ">
+
+    <header>
+      <!-- starting nav -->
+      <nav class="p-5">
+        <div class=" rounded-3xl navbar bg-base-100 bg-red-400 text-white">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1]">
+                <li><a>Home</a></li>
+                <li><a>About Us</a></li>
+                <li><a>Shop</a></li>
+                <li><a>All Fruits</a></li>
+              </ul>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-5">
+                <li><a>Home</a></li>
+                <li><a>About Us</a></li>
+                <li><a>Shop</a></li>
+                <li><a>All Fruits</a></li>
+              </ul>
+            </div>
+
+            <div class="flex px-28">
+              <img src="./images/logo.png" alt="">
+              <a class="btn btn-ghost normal-case text-xl">Fruit Burst</a>
+            </div>
+          </div>
+
+          <div class="relative text-gray-600 text-gray-400 pl-60 ">
+            <span class="absolute inset-y-0 left-0 flex items-center pl-16 ">
+              <button type="submit" class="p-48">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="w-6 h-6"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+              </button>
+            </span>
+            <input type="search" name="q" class="rounded-3xl py-2 text-sm text-white bg-gray-900 pl-24 bg-white text-gray-900" placeholder="Search Here">
+          </div>
+        </div>
+      </nav>
+      <!-- finishing navbar -->
+    </header>
+
+    <main>
+
+    </main>
+
+    <footer>
+
+    </footer>
     
 </body>
 </html>
